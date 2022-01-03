@@ -1,11 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-
-import { COLORS } from '../../constants';
-
-import SearchInput from '../SearchInput';
-import UnstyledButton from '../UnstyledButton';
-import Icon from '../Icon';
+import styled from "styled-components";
+import { COLORS } from "../../constants";
+import Icon from "../Icon";
+import SearchInput from "../SearchInput";
+import UnstyledButton from "../UnstyledButton";
 
 const SuperHeader = () => {
   return (
@@ -23,6 +20,10 @@ const SuperHeader = () => {
 };
 
 const Wrapper = styled.div`
+  padding: 12px 32px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
   font-size: 0.875rem;
   color: ${COLORS.gray[300]};
   background-color: ${COLORS.gray[900]};
@@ -30,6 +31,7 @@ const Wrapper = styled.div`
 
 const MarketingMessage = styled.span`
   color: ${COLORS.white};
+  margin-right: auto;
 `;
 
 const HelpLink = styled.a`
